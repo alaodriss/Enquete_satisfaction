@@ -1,0 +1,190 @@
+/* Couleur de fond pour le corps de la page */
+body {
+  background-color: #ff2d3e;
+  color: #10008b;
+  
+}
+
+:root {
+  --form-control-color: #10008b;
+  --form-control-color-2 : black
+}
+/* Centrer le formulaire */
+#feedback-form {
+  max-width: 60%;
+  margin: 7rem auto;
+  padding: 1rem 7rem;
+  background-color: #fff;
+  border-radius: 5rem;
+  position: relative;
+}
+.logo{
+  margin: 25px 50px;
+}
+
+.icon-lieux {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,-59%);
+
+}
+.titre {
+  text-align: center;
+  padding: 2.3rem 0;
+  margin-bottom: 3rem;
+  font-family: Avenir;
+}
+h1 {
+  text-align: center;
+}
+
+p {
+  font-family: Avenir;
+  font-size: 18px;
+  font-weight: 500;
+
+}
+.sous_question,.titre-chmap{
+  font-family: Avenir;
+  font-size: 14px;
+  font-weight: 100;
+}
+.notes{
+  font-family: Avenir;
+  font-size: 12px;
+  margin: 9px 9px;
+
+  text-align: center;
+  /* padding: 0 20px; */
+}
+
+.entete-notes {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 140%;
+  
+}
+.trac {
+  opacity: 0.2;
+  border-bottom: solid 1px #000085;
+}
+.trac_titre {
+  border-bottom: 2px solid #ff2d3e;
+}
+
+
+.form-box-table {
+  display: flex;
+  justify-content: space-between;
+}
+.boxs{
+  display: flex;
+  margin: 11px 0;
+  position: relative;
+}
+.box-table {
+  padding: 0px 25px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+#elements-sales{
+  width: 100%;
+  height: 106px;
+  border-radius: 8px;
+  border: solid 1px #bababa;
+}   
+
+#comment{
+  width: 70%;
+  height: 80px;
+  border-radius: 8px;
+  border: solid 1px #bababa;
+}   
+#numero{
+  border-radius: 8px;
+  border: solid 1px #bababa;
+  height: 30px;
+}
+
+/* Styles pour les libellés */
+label {
+  font-family: Avenir;
+  font-size: 14px;
+}
+label:focus-within {
+  color: var(--form-control-color-2);
+}
+/* Styles pour les boutons radio et les cases à cocher */
+/* Hide the default radio button */
+
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"] + label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+input[type="radio"] + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ff2d3e;;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked + label:before {
+  content: "";
+  display: block;
+  border: 1px solid #ff2d3e;
+  background-color: #ff2d3e;
+  background-image: url(../asstes/icons/check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+.box-checkbox{
+  padding: 8px 0;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"] + label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+input[type="checkbox"] + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ff2d3e;;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label:before {
+  content: "";
+  display: block;
+  border: 1px solid #ff2d3e;
+  background-color: #ff2d3e;
+  background-image: url(../asstes/icons/check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
