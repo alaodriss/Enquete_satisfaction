@@ -18,6 +18,10 @@ body {
   border-radius: 5rem;
   position: relative;
 }
+.block-questions {
+  padding-left: 20%;
+}
+  
 .logo{
   margin: 25px 50px;
 }
@@ -31,7 +35,6 @@ body {
 .titre {
   text-align: center;
   padding: 2.3rem 0;
-  margin-bottom: 3rem;
   font-family: Avenir;
 }
 h1 {
@@ -188,3 +191,74 @@ input[type="checkbox"]:checked + label:before {
   background-position: center;
   
 }
+/********Time line ********/
+
+.question{
+  /* display: flex; */
+  position: relative;
+}
+/* .cercle:last-child::after{ display: none; } */
+
+.cercle {
+  width: 36px;
+  height: 36px;
+  border: solid 3px #ff4849;
+  border-radius: 50px;
+  text-align: center;
+  background-color: #fff;  
+  position: absolute;
+  left: -69px;
+
+}
+
+
+.cercle::after{
+    content: "";
+    position: absolute;
+    top: 39px;
+    left: 16px;
+    /* height: calc(100% - -564px); */
+    width: 3px;
+    height: calc(100vh);
+    background-image: linear-gradient(1800deg, transparent, transparent 50%, #fff 50%, #fff 100%), linear-gradient(180deg, red, red, red, red, red);
+    border: none;
+    background-size: 1px 10px;
+}
+
+.numero {
+  font-family: Avenir;
+  font-size: 22px;
+  font-weight: 900;
+  color: #ff4849;
+  padding-top: 4px;
+  display: inline-block;
+}
+
+
+.cercle:last-child::after{
+  display: none;
+}
+
+
+
+
+
+
+/* @media screen and (max-width: 600px) {
+  .timeline {
+    padding: 0 10px;
+  }
+
+  .timeline::after {
+    left: 10px;
+  }
+
+  .timeline-event .date {
+    top: 0;
+    right: -30px;
+  }
+
+  .timeline-event .content {
+    padding: 10px;
+  }
+} */

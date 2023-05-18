@@ -25,11 +25,18 @@
             </h1>
             <p>(disponible dans l'espace locaraire à J+30)</p>
          </div>
-      
-         <p>
-            Concernant l'accueil et la qualité des échanges avec les <br/> équipes Nové,
-            diriez-vous que vous êtes ?
-         </p>
+      <div class="block-questions"> 
+         <div class="question"> 
+            <div class="cercle">
+               <span class="numero">1</span>
+            </div>
+            <div> 
+               <p>
+                  Concernant l'accueil et la qualité des échanges avec les <br/> équipes Nové,
+                  diriez-vous que vous êtes ?
+               </p>
+            </div>
+         </div>
          <div class="form-box">
             <div class="box">
                <input
@@ -118,17 +125,22 @@
             </div>
          </div>
          <!--------------------------------- 2------------ -->
-
-         <p>
-            Lors de votre arrivée dans le logement, comment  <br/>avez-vous trouvé
-            l'état des éléments suivants ?
-         </p>
-         <br />
-         <br />
-         <div class="form-box-table">
-            <div class="titre-box-table">
-               <p class="titre-chmap">Porte d'entrée et serrure</p>
+         <div class="question"> 
+            <div class="cercle timeline">
+               <span class="numero">2</span>
             </div>
+            <div> 
+            <p>
+               Lors de votre arrivée dans le logement, comment  <br/>avez-vous trouvé
+               l'état des éléments suivants ?
+            </p>
+         </div>
+         </div>
+            <br />
+            <div class="form-box-table">
+               <div class="titre-box-table">
+                  <p class="titre-chmap">Porte d'entrée et serrure</p>
+               </div>
           
             <div class="boxs">
               <!-- en tete de table-->
@@ -436,28 +448,41 @@
          <!--------------------------------- 3  ------------ -->
          <br/>
          <div>
+            <div class="question"> 
+               <div class="cercle timeline">
+                  <span class="numero">3</span>
+               </div>
+               <div> 
             <p>Des réparations ou travaux ont-ils été programmés   <br/> lors de votre
                arrivée ou à la suite de votre arrivée dans   <br/>le logement ?
-            </p
-               >
-            <div class="form-control">
-               <div class="box"> 
-                  <input type="radio" id="travaux-oui" name="travaux" value="oui" />
-                  <label for="travaux-oui">Oui</label>
-               </div>
-               <div class="box"> 
-                  <input type="radio" id="travaux-non" name="travaux" value="non" />
-                  <label for="travaux-non">Non</label>
+            </p>
+         </div>
+         </div>
+               <div class="form-control">
+                  <div class="box"> 
+                     <input type="radio" id="travaux-oui" name="travaux" value="oui" />
+                     <label for="travaux-oui">Oui</label>
+                  </div>
+                  <div class="box"> 
+                     <input type="radio" id="travaux-non" name="travaux" value="non" />
+                     <label for="travaux-non">Non</label>
+                  </div>
                </div>
             </div>
+            <!--------------------------------- 4 ------------ -->
+            <br/>
+            <div>
+               <div class="question"> 
+                  <div class="cercle timeline">
+                     <span class="numero">4</span>
+                  </div>
+                  <div> 
+               <p>Si oui, ont-ils été réalisés ?</p>
+            </div>
          </div>
-         <!--------------------------------- 4 ------------ -->
-         <br/>
-         <div>
-            <p>Si oui, ont-ils été réalisés ?</p>
-            <div class="form-control">
-               <input
-                  type="radio"
+               <div class="form-control">
+                  <input
+                     type="radio"
                   id="travaux-oui-integ"
                   name="travaux-realises"
                   value="oui-integ"
@@ -482,444 +507,474 @@
          <!--------------------------------- 5 ------------ -->
          <br/>
          <div>
+            <div class="question"> 
+               <div class="cercle">
+                  <span class="numero">5</span>
+               </div>
+               <div> 
             <p>
                Concernant la propreté du logement lors de votre arrivée, diriez-vous
                que vous êtes ?
             </p>
-            <div class="form-control">
-               <input
-                  type="radio"
-                  id="proprete-tres-satisfait"
-                  name="proprete"
-                  value="tres-satisfait"
-                  />
-               <label for="proprete-tres-satisfait">Très satisfait</label>
-               <input
-                  type="radio"
-                  id="proprete-satisfait"
-                  name="proprete"
-                  value="satisfait"
-                  />
-               <label for="proprete-satisfait">Satisfait</label>
-               <input
-                  type="radio"
-                  id="proprete-plutot-insatisfait"
-                  name="proprete"
-                  value="plutot-insatisfait"
-                  />
-               <label for="proprete-plutot-insatisfait">Plutôt insatisfait</label>
-               <input
-                  type="radio"
-                  id="proprete-insatisfait"
-                  name="proprete"
-                  value="insatisfait"
-                  />
-               <label for="proprete-insatisfait">Insatisfait</label>
             </div>
          </div>
-         <div id="element-sales" style="display: none">
-            <p class="sous_question">En cas d’insatisfaction, merci de nous indiquer les éventuels éléments ou <br/> pièces jugés sales</p>
-            <input type="text" id="elements-sales" name="proprete" value="" />
-         </div>
-         <!--------------------------------- 6 ------------ -->
-         <br/>
-         <p 
-            >Concernant votre immeuble / résidence, comment <br/> évaluez-vous le
-            fonctionnement des équipements <br/>suivants ?
-         </p
-            >
-         <br />
-         <div class="form-box-table">
-            <div class="titre-box-table">
-               <p class="titre-chmap"
-                  >Systèmes d'accès (porte, interphonie, visiophonie, badges)</p
-                  >
-            </div>
-            <div class="boxs">
-               <!-- en tete de table-->
-               <div class="entete-notes"> 
-                <span class="notes">Très satisfaisant </span>
-                <span class="notes">Satisfaisant </span>
-                <span class="notes">Plutôt satisfait</span>
-                <span class="notes">Insatisfaisant </span>
-              </div>
-               <div class="box-table">
+               <div class="form-control">
                   <input
                      type="radio"
-                     id="access_system_tres-satisfait"
-                     name="access_system"
-                     value="tres-satisfait"/>
-                  <label for="access_system_tres-satisfait"></label>
-               </div>
-               <div class="box-table"> 
-                  <input
-                     type="radio"
-                     id="access_system_satisfait"
-                     name="access_system"
-                     value="satisfait"
-                     />
-                  <label for="access_system_satisfait"></label>
-               </div>
-               <div class="box-table"> 
-                  <input
-                     type="radio"
-                     id="access_system_plutot-insatisfait"
-                     name="access_system"
-                     value="plutot-insatisfait"
-                     />
-                  <label for="access_system_plutot-insatisfait"></label>
-               </div>
-               <div class="box-table"> 
-                  <input
-                     type="radio"
-                     id="access_system_insatisfait"
-                     name="access_system"
-                     value="insatisfait"
-                     />
-                  <label for="access_system_insatisfait"></label>
-               </div>
-            </div>
-         </div>
-         <!--trac-->
-         <div class="trac"></div>
-         <div class="form-box-table">
-            <div class="titre-box-table">
-               <p class="titre-chmap">Eclairage</p>
-            </div>
-            <div class="boxs">
-               <div class="box-table">
-                  <input
-                     type="radio"
-                     id="lighting_tres-satisfait"
-                     name="lighting"
+                     id="proprete-tres-satisfait"
+                     name="proprete"
                      value="tres-satisfait"
                      />
-                  <label for="lighting_tres-satisfait"></label>
-               </div>
-               <div class="box-table">
+                  <label for="proprete-tres-satisfait">Très satisfait</label>
                   <input
                      type="radio"
-                     id="lighting_satisfait"
-                     name="lighting"
+                     id="proprete-satisfait"
+                     name="proprete"
                      value="satisfait"
                      />
-                  <label for="lighting_satisfait"></label>
-               </div>
-               <div class="box-table">
+                  <label for="proprete-satisfait">Satisfait</label>
                   <input
                      type="radio"
-                     id="lighting_plutot-insatisfait"
-                     name="lighting"
+                     id="proprete-plutot-insatisfait"
+                     name="proprete"
                      value="plutot-insatisfait"
                      />
-                  <label for="lighting_plutot-insatisfait"></label>
-               </div>
-               <div class="box-table">
+                  <label for="proprete-plutot-insatisfait">Plutôt insatisfait</label>
                   <input
                      type="radio"
-                     id="lighting_insatisfait"
-                     name="lighting"
+                     id="proprete-insatisfait"
+                     name="proprete"
                      value="insatisfait"
                      />
-                  <label for="lighting_insatisfait"></label>
+                  <label for="proprete-insatisfait">Insatisfait</label>
                </div>
+            </div>
+            <div id="element-sales" style="display: none">
+               <p class="sous_question">En cas d’insatisfaction, merci de nous indiquer les éventuels éléments ou <br/> pièces jugés sales</p>
+               <input type="text" id="elements-sales" name="proprete" value="" />
+            </div>
+            <!--------------------------------- 6 ------------ -->
+            <br/>
+            <div class="question"> 
+               <div class="cercle">
+                  <span class="numero">6</span>
+               </div>
+               <div> 
+            <p>Concernant votre immeuble / résidence, comment <br/> évaluez-vous le
+               fonctionnement des équipements <br/>suivants ?
+               </p>
             </div>
          </div>
-         <!--trac-->
-         <div class="trac"></div>
-         <div class="form-box-table">
-            <div class="titre-box-table">
-               <p class="titre-chmap">Repères et signalétique</p>
+            <br />
+            <div class="form-box-table">
+               <div class="titre-box-table">
+                  <p class="titre-chmap"
+                     >Systèmes d'accès (porte, interphonie, visiophonie, badges)</p
+                     >
+               </div>
+               <div class="boxs">
+                  <!-- en tete de table-->
+                  <div class="entete-notes"> 
+                  <span class="notes">Très satisfaisant </span>
+                  <span class="notes">Satisfaisant </span>
+                  <span class="notes">Plutôt satisfait</span>
+                  <span class="notes">Insatisfaisant </span>
+               </div>
+                  <div class="box-table">
+                     <input
+                        type="radio"
+                        id="access_system_tres-satisfait"
+                        name="access_system"
+                        value="tres-satisfait"/>
+                     <label for="access_system_tres-satisfait"></label>
+                  </div>
+                  <div class="box-table"> 
+                     <input
+                        type="radio"
+                        id="access_system_satisfait"
+                        name="access_system"
+                        value="satisfait"
+                        />
+                     <label for="access_system_satisfait"></label>
+                  </div>
+                  <div class="box-table"> 
+                     <input
+                        type="radio"
+                        id="access_system_plutot-insatisfait"
+                        name="access_system"
+                        value="plutot-insatisfait"
+                        />
+                     <label for="access_system_plutot-insatisfait"></label>
+                  </div>
+                  <div class="box-table"> 
+                     <input
+                        type="radio"
+                        id="access_system_insatisfait"
+                        name="access_system"
+                        value="insatisfait"
+                        />
+                     <label for="access_system_insatisfait"></label>
+                  </div>
+               </div>
             </div>
-            <div class="boxs">
-               <div class="box-table">
-                  <input
-                     type="radio"
-                     id="signage_tres-satisfait"
-                     name="signage"
-                     value="tres-satisfait"
-                     />
-                  <label for="signage_tres-satisfait"></label>
+            <!--trac-->
+            <div class="trac"></div>
+            <div class="form-box-table">
+               <div class="titre-box-table">
+                  <p class="titre-chmap">Eclairage</p>
                </div>
-               <div class="box-table">
-                  <input
-                     type="radio"
-                     id="signage_satisfait"
-                     name="signage"
-                     value="satisfait"
-                     />
-                  <label for="signage_satisfait"></label>
-               </div>
-               <div class="box-table">
-                  <input
-                     type="radio"
-                     id="signage_plutot-insatisfait"
-                     name="signage"
-                     value="plutot-insatisfait"
-                     />
-                  <label for="signage_plutot-insatisfait"></label>
-               </div>
-               <div class="box-table">
-                  <input
-                     type="radio"
-                     id="signage_insatisfait"
-                     name="signage"
-                     value="insatisfait"
-                     />
-                  <label for="signage_insatisfait"></label>
+               <div class="boxs">
+                  <div class="box-table">
+                     <input
+                        type="radio"
+                        id="lighting_tres-satisfait"
+                        name="lighting"
+                        value="tres-satisfait"
+                        />
+                     <label for="lighting_tres-satisfait"></label>
+                  </div>
+                  <div class="box-table">
+                     <input
+                        type="radio"
+                        id="lighting_satisfait"
+                        name="lighting"
+                        value="satisfait"
+                        />
+                     <label for="lighting_satisfait"></label>
+                  </div>
+                  <div class="box-table">
+                     <input
+                        type="radio"
+                        id="lighting_plutot-insatisfait"
+                        name="lighting"
+                        value="plutot-insatisfait"
+                        />
+                     <label for="lighting_plutot-insatisfait"></label>
+                  </div>
+                  <div class="box-table">
+                     <input
+                        type="radio"
+                        id="lighting_insatisfait"
+                        name="lighting"
+                        value="insatisfait"
+                        />
+                     <label for="lighting_insatisfait"></label>
+                  </div>
                </div>
             </div>
+            <!--trac-->
+            <div class="trac"></div>
+            <div class="form-box-table">
+               <div class="titre-box-table">
+                  <p class="titre-chmap">Repères et signalétique</p>
+               </div>
+               <div class="boxs">
+                  <div class="box-table">
+                     <input
+                        type="radio"
+                        id="signage_tres-satisfait"
+                        name="signage"
+                        value="tres-satisfait"
+                        />
+                     <label for="signage_tres-satisfait"></label>
+                  </div>
+                  <div class="box-table">
+                     <input
+                        type="radio"
+                        id="signage_satisfait"
+                        name="signage"
+                        value="satisfait"
+                        />
+                     <label for="signage_satisfait"></label>
+                  </div>
+                  <div class="box-table">
+                     <input
+                        type="radio"
+                        id="signage_plutot-insatisfait"
+                        name="signage"
+                        value="plutot-insatisfait"
+                        />
+                     <label for="signage_plutot-insatisfait"></label>
+                  </div>
+                  <div class="box-table">
+                     <input
+                        type="radio"
+                        id="signage_insatisfait"
+                        name="signage"
+                        value="insatisfait"
+                        />
+                     <label for="signage_insatisfait"></label>
+                  </div>
+               </div>
+            </div>
+            <!--trac-->
+            <div class="trac"></div>
+            <div class="form-box-table">
+               <div class="titre-box-table">
+                  <p class="titre-chmap">Ascenseur</p>
+               </div>
+               <div class="boxs">
+                  <div class="box-table">
+                     <input
+                        type="radio"
+                        id="elevator_tres-satisfait"
+                        name="elevator"
+                        value="tres-satisfait"
+                        />
+                     <label for="elevator_tres-satisfait"></label>
+                  </div>
+                  <div class="box-table">
+                     <input
+                        type="radio"
+                        id="elevator_satisfait"
+                        name="elevator"
+                        value="satisfait"
+                        />
+                     <label for="elevator_satisfait"></label>
+                  </div>
+                  <div class="box-table">
+                     <input
+                        type="radio"
+                        id="elevator_plutot-insatisfait"
+                        name="elevator"
+                        value="plutot-insatisfait"
+                        />
+                     <label for="elevator_plutot-insatisfait"></label>
+                  </div>
+                  <div class="box-table">
+                     <input
+                        type="radio"
+                        id="elevator_insatisfait"
+                        name="elevator"
+                        value="insatisfait"
+                        />
+                     <label for="elevator_insatisfait"></label>
+                  </div>
+               </div>
+            </div>
+            <!--trac-->
+            <div class="trac"></div>
+            <div class="form-box-table">
+               <div class="titre-box-table">
+                  <p class="titre-chmap">Boîtes-aux-lettres</p>
+               </div>
+               <div class="boxs">
+                  <div class="box-table">
+                     <input
+                        type="radio"
+                        id="mailboxes_very_satisfait"
+                        name="mailboxes"
+                        value="very_satisfait"
+                        />
+                     <label for="mailboxes_very_satisfait"></label>
+                  </div>
+                  <div class="box-table">
+                     <input
+                        type="radio"
+                        id="mailboxes_satisfait"
+                        name="mailboxes"
+                        value="satisfait"
+                        />
+                     <label for="mailboxes_satisfait"></label>
+                  </div>
+                  <div class="box-table">
+                     <input
+                        type="radio"
+                        id="mailboxes_plutot-insatisfait"
+                        name="mailboxes"
+                        value="plutot-insatisfait"
+                        />
+                     <label for="mailboxes_plutot-insatisfait"></label>
+                  </div>
+                  <div class="box-table">
+                     <input
+                        type="radio"
+                        id="mailboxes_insatisfait"
+                        name="mailboxes"
+                        value="insatisfait"
+                        />
+                     <label for="mailboxes_insatisfait"></label>
+                  </div>
+               </div>
+            </div>
+            <div class="trac"></div>
+            <!--------------------------------- 7 ------------ -->
+            <br />
+            <div class="question"> 
+               <div class="cercle">
+                  <span class="numero">7</span>
+               </div>
+               <div> 
+            <p>Concernant la qualité de vie dans la résidence, comment      <br />
+               évaluez-vous
+               les éléments suivants ?
+            </p>
          </div>
-         <!--trac-->
-         <div class="trac"></div>
-         <div class="form-box-table">
-            <div class="titre-box-table">
-               <p class="titre-chmap">Ascenseur</p>
-            </div>
-            <div class="boxs">
-               <div class="box-table">
-                  <input
-                     type="radio"
-                     id="elevator_tres-satisfait"
-                     name="elevator"
-                     value="tres-satisfait"
-                     />
-                  <label for="elevator_tres-satisfait"></label>
+      </div>
+            <br />
+            <div class="form-box-table">
+               <div class="titre-box-table">
+                  <p class="titre-chmap">Tranquillité</p>
                </div>
-               <div class="box-table">
-                  <input
-                     type="radio"
-                     id="elevator_satisfait"
-                     name="elevator"
-                     value="satisfait"
-                     />
-                  <label for="elevator_satisfait"></label>
+               <div class="boxs">
+                  <!-- en tete de table-->
+                  <div class="entete-notes"> 
+                  <span class="notes">Très satisfaisant </span>
+                  <span class="notes">Satisfaisant </span>
+                  <span class="notes">Plutôt satisfait</span>
+                  <span class="notes">Insatisfaisant </span>
                </div>
-               <div class="box-table">
-                  <input
-                     type="radio"
-                     id="elevator_plutot-insatisfait"
-                     name="elevator"
-                     value="plutot-insatisfait"
-                     />
-                  <label for="elevator_plutot-insatisfait"></label>
-               </div>
-               <div class="box-table">
-                  <input
-                     type="radio"
-                     id="elevator_insatisfait"
-                     name="elevator"
-                     value="insatisfait"
-                     />
-                  <label for="elevator_insatisfait"></label>
+                  <div class="box-table">
+                     <input type="radio" id="tres_tranquility" name="tranquility" value="tres-satisfait" />
+                     <label for="tres_tranquility"></label>
+                  </div>
+                  <div class="box-table">
+                     <input type="radio" id="sati_tranquility" name="tranquility" value="satisfait" />
+                     <label for="sati_tranquility">  </label>
+                  </div>
+                  <div class="box-table">
+                     <input
+                        type="radio"
+                        id="plutot_tres_tranquility"
+                        name="tranquility"
+                        value="plutot-insatisfait"/>        
+                     <label for="plutot_tres_tranquility"> 
+                     </label>
+                  </div>
+                  <div class="box-table"> 
+                     <input
+                        type="radio"
+                        id="insati_tranquility"
+                        name="tranquility"
+                        value="insatisfait"
+                        />     <label for="insati_tranquility">
+                     </label>
+                  </div>
                </div>
             </div>
+            <div class="trac"></div>
+            <div class="form-box-table">
+               <div class="titre-box-table">
+                  <p class="titre-chmap">Relations de voisinage</p>
+               </div>
+               <div class="boxs">
+                  <div class="box-table">
+                     <input type="radio" id="tres_voisinage" name="voisinage" value="tres-satisfait" />
+                     <label for="tres_voisinage"> </label>
+                  </div>
+                  <div class="box-table">
+                     <input type="radio" id="sati_voisinage" name="voisinage" value="satisfait" />
+                     <label for="sati_voisinage"> </label>
+                  </div>
+                  <div class="box-table">
+                     <input
+                        type="radio"
+                        id="pluto_voisinage"
+                        name="voisinage"
+                        value="plutot-insatisfait"
+                        />
+                     <label for="pluto_voisinage" ></label>
+                  </div>
+                  <div class="box-table">
+                     <input type="radio" id="insati_voisinage" name="voisinage" value="insatisfait" />
+                     <label for="insati_voisinage"></label>
+                  </div>
+               </div>
+            </div>
+            <div class="trac"></div>
+            <div class="form-box-table">
+               <div class="titre-box-table">
+                  <p class="titre-chmap">Propreté des abords et des parties communes</p>
+               </div>
+               <div class="boxs">
+                  <div class="box-table">
+                     <input
+                        type="radio"
+                        id="tres-proprete-communes"
+                        name="proprete-communes"
+                        value="tres-satisfait"
+                        />
+                     <label for="tres-proprete-communes" > </label>
+                  </div>
+                  <div class="box-table">
+                     <input
+                        type="radio"
+                        id="sati-proprete-communes"
+                        name="proprete-communes"
+                        value="satisfait"
+                        />      
+                     <label for="sati-proprete-communes"> </label>
+                  </div>
+                  <div class="box-table">
+                     <input
+                        type="radio"
+                        id="plutot-proprete-communes"
+                        name="proprete-communes"
+                        value="plutot-insatisfait"
+                        />
+                     <label for="plutot-proprete-communes"> </label>
+                  </div>
+                  <div class="box-table">
+                     <input
+                        type="radio"
+                        id="insati-proprete-communes"
+                        name="proprete-communes"
+                        value="insatisfait"
+                        />
+                     <label for="insati-proprete-communes"> </label>
+                  </div>
+               </div>
+            </div>
+            <div class="trac"></div>
+            <div class="form-box-table">
+               <div class="titre-box-table">
+                  <p class="titre-chmap">Gestion des déchets</p>
+               </div>
+               <div class="boxs">
+                  <div class="box-table">
+                     <input type="radio" id="tres-sati-dechets" name="dechets" value="tres-satisfait" />
+                     <label for="tres-sati-dechets"></label>
+                  </div>
+                  <div class="box-table">
+                     <input type="radio" id="sati-dechets" name="dechets" value="satisfait" />    
+                     <label for="sati-dechets"></label>
+                  </div>
+                  <div class="box-table">
+                     <input type="radio" id="plutot-dechets" name="dechets" value="plutot-insatisfait" />
+                     <label for="plutot-dechets"> </label>
+                  </div>
+                  <div class="box-table">
+                     <input type="radio" id="insat-dechets" name="dechets" value="insatisfait" />
+                     <label for="insat-dechets" > </label>
+                  </div>
+               </div>
+            </div>
+            <div class="trac"></div>
+            <!--------------------------------- 8 ------------ -->
+            <br />
+            <div class="question"> 
+               <div class="cercle">
+                  <span class="numero">8</span>
+               </div>
+               <div> 
+            <p>Commentaires</p>
          </div>
-         <!--trac-->
-         <div class="trac"></div>
-         <div class="form-box-table">
-            <div class="titre-box-table">
-               <p class="titre-chmap">Boîtes-aux-lettres</p>
+      </div>
+            <div class="satisfaction">
+                  <textarea id="comment"  name="commentaires" value="" rows="5" cols="33"></textarea>
             </div>
-            <div class="boxs">
-               <div class="box-table">
-                  <input
-                     type="radio"
-                     id="mailboxes_very_satisfait"
-                     name="mailboxes"
-                     value="very_satisfait"
-                     />
-                  <label for="mailboxes_very_satisfait"></label>
+            <br />
+            <!--------------------------------- 9 ------------ -->
+            <div class="question"> 
+               <div class="cercle">
+                  <span class="numero">9</span>
                </div>
-               <div class="box-table">
-                  <input
-                     type="radio"
-                     id="mailboxes_satisfait"
-                     name="mailboxes"
-                     value="satisfait"
-                     />
-                  <label for="mailboxes_satisfait"></label>
-               </div>
-               <div class="box-table">
-                  <input
-                     type="radio"
-                     id="mailboxes_plutot-insatisfait"
-                     name="mailboxes"
-                     value="plutot-insatisfait"
-                     />
-                  <label for="mailboxes_plutot-insatisfait"></label>
-               </div>
-               <div class="box-table">
-                  <input
-                     type="radio"
-                     id="mailboxes_insatisfait"
-                     name="mailboxes"
-                     value="insatisfait"
-                     />
-                  <label for="mailboxes_insatisfait"></label>
-               </div>
-            </div>
+               <div> 
+            <p>
+            En cas d'expression d'insatisfaction dans ce     <br />questionnaire,
+            souhaitez-vous que nous prenions contact    <br /> avec vous ?</p>
          </div>
-         <div class="trac"></div>
-         <!--------------------------------- 7 ------------ -->
-         <br />
-         <p
-            >Concernant la qualité de vie dans la résidence, comment      <br />
-            évaluez-vous
-            les éléments suivants ?
-         </p
-            >
-         <br />
-         <div class="form-box-table">
-            <div class="titre-box-table">
-               <p class="titre-chmap">Tranquillité</p>
-            </div>
-            <div class="boxs">
-               <!-- en tete de table-->
-               <div class="entete-notes"> 
-                <span class="notes">Très satisfaisant </span>
-                <span class="notes">Satisfaisant </span>
-                <span class="notes">Plutôt satisfait</span>
-                <span class="notes">Insatisfaisant </span>
-            </div>
-               <div class="box-table">
-                  <input type="radio" id="tres_tranquility" name="tranquility" value="tres-satisfait" />
-                  <label for="tres_tranquility"></label>
-               </div>
-               <div class="box-table">
-                  <input type="radio" id="sati_tranquility" name="tranquility" value="satisfait" />
-                  <label for="sati_tranquility">  </label>
-               </div>
-               <div class="box-table">
-                  <input
-                     type="radio"
-                     id="plutot_tres_tranquility"
-                     name="tranquility"
-                     value="plutot-insatisfait"/>        
-                  <label for="plutot_tres_tranquility"> 
-                  </label>
-               </div>
-               <div class="box-table"> 
-                  <input
-                     type="radio"
-                     id="insati_tranquility"
-                     name="tranquility"
-                     value="insatisfait"
-                     />     <label for="insati_tranquility">
-                  </label>
-               </div>
-            </div>
-         </div>
-         <div class="trac"></div>
-         <div class="form-box-table">
-            <div class="titre-box-table">
-               <p class="titre-chmap">Relations de voisinage</p>
-            </div>
-            <div class="boxs">
-               <div class="box-table">
-                  <input type="radio" id="tres_voisinage" name="voisinage" value="tres-satisfait" />
-                  <label for="tres_voisinage"> </label>
-               </div>
-               <div class="box-table">
-                  <input type="radio" id="sati_voisinage" name="voisinage" value="satisfait" />
-                  <label for="sati_voisinage"> </label>
-               </div>
-               <div class="box-table">
-                  <input
-                     type="radio"
-                     id="pluto_voisinage"
-                     name="voisinage"
-                     value="plutot-insatisfait"
-                     />
-                  <label for="pluto_voisinage" ></label>
-               </div>
-               <div class="box-table">
-                  <input type="radio" id="insati_voisinage" name="voisinage" value="insatisfait" />
-                  <label for="insati_voisinage"></label>
-               </div>
-            </div>
-         </div>
-         <div class="trac"></div>
-         <div class="form-box-table">
-            <div class="titre-box-table">
-               <p class="titre-chmap">Propreté des abords et des parties communes</p>
-            </div>
-            <div class="boxs">
-               <div class="box-table">
-                  <input
-                     type="radio"
-                     id="tres-proprete-communes"
-                     name="proprete-communes"
-                     value="tres-satisfait"
-                     />
-                  <label for="tres-proprete-communes" > </label>
-               </div>
-               <div class="box-table">
-                  <input
-                     type="radio"
-                     id="sati-proprete-communes"
-                     name="proprete-communes"
-                     value="satisfait"
-                     />      
-                  <label for="sati-proprete-communes"> </label>
-               </div>
-               <div class="box-table">
-                  <input
-                     type="radio"
-                     id="plutot-proprete-communes"
-                     name="proprete-communes"
-                     value="plutot-insatisfait"
-                     />
-                  <label for="plutot-proprete-communes"> </label>
-               </div>
-               <div class="box-table">
-                  <input
-                     type="radio"
-                     id="insati-proprete-communes"
-                     name="proprete-communes"
-                     value="insatisfait"
-                     />
-                  <label for="insati-proprete-communes"> </label>
-               </div>
-            </div>
-         </div>
-         <div class="trac"></div>
-         <div class="form-box-table">
-            <div class="titre-box-table">
-               <p class="titre-chmap">Gestion des déchets</p>
-            </div>
-            <div class="boxs">
-               <div class="box-table">
-                  <input type="radio" id="tres-sati-dechets" name="dechets" value="tres-satisfait" />
-                  <label for="tres-sati-dechets"></label>
-               </div>
-               <div class="box-table">
-                  <input type="radio" id="sati-dechets" name="dechets" value="satisfait" />    
-                  <label for="sati-dechets"></label>
-               </div>
-               <div class="box-table">
-                  <input type="radio" id="plutot-dechets" name="dechets" value="plutot-insatisfait" />
-                  <label for="plutot-dechets"> </label>
-               </div>
-               <div class="box-table">
-                  <input type="radio" id="insat-dechets" name="dechets" value="insatisfait" />
-                  <label for="insat-dechets" > </label>
-               </div>
-            </div>
-         </div>
-         <div class="trac"></div>
-         <!--------------------------------- 8 ------------ -->
-         <br />
-         <p>Commentaires</p>
-         <div class="satisfaction">
-               <textarea id="comment"  name="commentaires" value="" rows="5" cols="33"></textarea>
-         </div>
-         <br />
-         <!--------------------------------- 9 ------------ -->
-         <p>
-         En cas d'expression d'insatisfaction dans ce     <br />questionnaire,
-         souhaitez-vous que nous prenions contact    <br /> avec vous ?</p
-            >
+      </div>
          <div id="contact">
           <div class="form-control">
             <input type="radio" id="oui" name="contact" value="oui" />
@@ -938,8 +993,14 @@
 
          <br />
          <!--------------------------------- 10 ------------ -->
+         <div class="question"> 
+            <div class="cercle">
+               <span class="numero">10</span>
+            </div>
+            <div> 
          <p> Souhaitez-vous conserver l’anonymat de vos réponses ?</p>
-  
+      </div>
+   </div>
          <div id="anonymat">
           <div class="form-control">
             <input type="radio" id="oui-anonymat" name="anonymat" value="oui" />
@@ -948,8 +1009,7 @@
             <label for="non-anonymat">non</label>
           </div>
          </div>
-        
-         <br />
+      </div>
          <br />
          <button type="submit">Envoyer</button>
       </form>
