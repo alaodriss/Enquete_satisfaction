@@ -3,8 +3,8 @@ let feedbackForm = document.getElementById("feedback-form");
 // question 1 telephone
 
 //satisfait
- let tressfactionRadioss = document.getElementById("tres-satisfait");
- let plutotsfactionRadio = document.getElementById("plutot-insatisfait");
+let tressfactionRadioss = document.getElementById("tres-satisfait");
+let plutotsfactionRadio = document.getElementById("plutot-insatisfait");
 
 //insatisfait
 let insatisfactionRadio = document.getElementById("insatisfait");
@@ -21,48 +21,55 @@ plutotsfactionRadio.addEventListener("click", function () {
   causesInsatisfactionDiv.style.display = "none";
 });
 
-
-
-
-//insatisfait 2
+//insatisfait de question (5)
 let radioInsatisfait = document.getElementById("proprete-insatisfait");
 let elementSalesDiv = document.getElementById("element-sales");
+let plutotressatisfait = document.getElementById("proprete-tres-satisfait");
+let propreteplutotsatisfait = document.getElementById("proprete-satisfait");
+let propreteplutotInsatisfait = document.getElementById(
+  "proprete-plutot-insatisfait"
+);
 
+radioInsatisfait.addEventListener("click", () => {
+  elementSalesDiv.style.display = "block";
+});
 
+plutotressatisfait.addEventListener("click", () => {
+  elementSalesDiv.style.display = "none";
+});
 
+propreteplutotsatisfait.addEventListener("click", () => {
+  elementSalesDiv.style.display = "none";
+});
 
+propreteplutotInsatisfait.addEventListener("click", () => {
+  elementSalesDiv.style.display = "none";
+});
 
 // question 9 telephone
-
-let contact = document.getElementsByName('contact');
-let telephone = document.getElementById('telephone');
-let numero = document.getElementById('numero');
-for(let i=0; i<contact.length; i++) {
-  contact[i].addEventListener('click', function() {
-    if (this.value === 'non') {
-      telephone.style.display = 'block';
-      console.log('Option sélectionnée : oui');
-      console.log('Numéro de téléphone : ' + numero.value);
+let contact = document.getElementsByName("contact");
+let telephone = document.getElementById("telephone");
+let numero = document.getElementById("numero");
+for (let i = 0; i < contact.length; i++) {
+  contact[i].addEventListener("click", function () {
+    if (this.value === "oui") {
+      telephone.style.display = "block";
+      console.log("Option sélectionnée : oui");
+      console.log("Numéro de téléphone : " + numero.value);
     } else {
-      telephone.style.display = 'none';
-      console.log('Option sélectionnée : non');
+      telephone.style.display = "none";
+      console.log("Option sélectionnée : non");
     }
   });
 }
 
-
 // question 10 :
-const radios = document.getElementsByName('anonymat');
-let question10 =""
-radios.forEach(radio => {
-  radio.addEventListener('click', () => {
-    question10 =  radio.value;
+const radios = document.getElementsByName("anonymat");
+let question10 = "";
+radios.forEach((radio) => {
+  radio.addEventListener("click", () => {
+    question10 = radio.value;
   });
-});
-
-
-radioInsatisfait.addEventListener("click", () => {
-  elementSalesDiv.style.display = "block";
 });
 
 // form
@@ -127,30 +134,19 @@ feedbackForm.addEventListener("submit", function (event) {
     'input[name="mailboxes"]:checked'
   ).value;
 
-
-
   const Tranquility = document.querySelector(
     'input[name="tranquility"]:checked'
   ).value;
-
 
   const Voisinage = document.querySelector(
     'input[name="voisinage"]:checked'
   ).value;
 
-
   const propreteCommunes = document.querySelector(
     'input[name="proprete-communes"]:checked'
   ).value;
 
-
-  const  Dechets = document.querySelector(
-    'input[name="dechets"]:checked'
-  ).value;
-
-
-
-
+  const Dechets = document.querySelector('input[name="dechets"]:checked').value;
 
   const travauxRadios = document.getElementsByName("travaux");
   let selectedTravaux = "";
@@ -171,6 +167,7 @@ feedbackForm.addEventListener("submit", function (event) {
     }
   }
 
+  /***************************** 5 **********************************/
   let radiosProprete = document.getElementsByName("proprete");
   let Proprete = "";
   for (let i = 0; i < radiosProprete.length; i++) {
@@ -186,60 +183,56 @@ feedbackForm.addEventListener("submit", function (event) {
     elements = autreProprete.value;
   }
 
-
   let commenTaires = document.getElementById("comment").value;
 
+  // console.log("----------------------------- 1 -------------------");
 
+  // console.log("Satisfaction : " + selectedSatisfaction);
+  // console.log("Causes d'insatisfaction : " + selectedCauses.join(", "));
+  // console.log("Autre détails : " + autreDetails);
 
+  // console.log("-----------------------------2-------------------");
 
-  console.log("----------------------------- 1 -------------------");
+  // //   // Affichage des valeurs récupérées (pour test)
+  // console.log(`Porte d'entrée et serrure : ${porteEntree}`);
+  // console.log(`Sols : ${sols}`);
+  // console.log(`Murs : ${murs}`);
+  // console.log(`Plafonds : ${plafonds}`);
+  // console.log(`Sanitaires et robinetterie : ${sanitairesRobinetterie}`);
+  // console.log(`Prises de courant, de communication et télévision : ${prises}`);
+  // console.log(`Menuiseries (portes, placards, fenêtres) : ${menuiseries}`);
 
-  console.log("Satisfaction : " + selectedSatisfaction);
-  console.log("Causes d'insatisfaction : " + selectedCauses.join(", "));
-  console.log("Autre détails : " + autreDetails);
+  // console.log("----------------------------- 3 -------------------");
+  // console.log("Réparations programmées : " + selectedTravaux);
 
-  console.log("-----------------------------2-------------------");
+  // console.log("----------------------------- 4 -------------------");
+  // console.log("travaux Realises : " + travauxRealises);
 
-  //   // Affichage des valeurs récupérées (pour test)
-  console.log(`Porte d'entrée et serrure : ${porteEntree}`);
-  console.log(`Sols : ${sols}`);
-  console.log(`Murs : ${murs}`);
-  console.log(`Plafonds : ${plafonds}`);
-  console.log(`Sanitaires et robinetterie : ${sanitairesRobinetterie}`);
-  console.log(`Prises de courant, de communication et télévision : ${prises}`);
-  console.log(`Menuiseries (portes, placards, fenêtres) : ${menuiseries}`);
+  // console.log("----------------------------- 5 -------------------");
+  // console.log("Proprete: " + Proprete);
+  // console.log("elements: " + elements);
 
-  console.log("----------------------------- 3 -------------------");
-  console.log("Réparations programmées : " + selectedTravaux);
+  // console.log("---------------------------- 6 -------------------");
+  // console.log(`systeme d'acces: ${sysTeme}`);
+  // console.log(`Eclairage: ${Eclairage}`);
+  // console.log(`Signale: ${Signale}`);
+  // console.log(`Ascenseur: ${Ascenseur}`);
+  // console.log(`Boîtes-aux-lettres: ${Boites}`);
 
-  console.log("----------------------------- 4 -------------------");
-  console.log("travaux Realises : " + travauxRealises);
+  // console.log("---------------------------- 7 -------------------");
+  // console.log(`Tranquillité : ${Tranquility}`);
+  // console.log(`Relations de voisinage: ${Voisinage}`);
+  // console.log(
+  //   `Propreté des abords et des parties communes: ${propreteCommunes}`
+  // );
+  // console.log(`Gestion des déchets: ${Dechets}`);
 
-  console.log("----------------------------- 5 -------------------");
-  console.log("Proprete: " + Proprete);
-  console.log("elements: " + elements);
+  // console.log("---------------------------- 8 -------------------");
 
-  console.log("---------------------------- 6 -------------------");
-  console.log(`systeme d'acces: ${sysTeme}`);
-  console.log(`Eclairage: ${Eclairage}`);
-  console.log(`Signale: ${Signale}`);
-  console.log(`Ascenseur: ${Ascenseur}`);
-  console.log(`Boîtes-aux-lettres: ${Boites}`);
+  // console.log("Commantaires :" + commenTaires);
 
-  console.log("---------------------------- 7 -------------------");
-  console.log(`Tranquillité : ${Tranquility}`);
-  console.log(`Relations de voisinage: ${Voisinage}`);
-  console.log(`Propreté des abords et des parties communes: ${propreteCommunes}`);
-  console.log(`Gestion des déchets: ${Dechets}`);
-
-
-  console.log("---------------------------- 8 -------------------");
-
-  console.log("Commantaires :" + commenTaires)
-
-  console.log("---------------------------- 9 -------------------");
-  // console.log(`Vous avez choisi : ${question9}`);
-  console.log("---------------------------- 10 -------------------");
-  console.log(`Vous avez choisi : ${question10}`);
-
+  // console.log("---------------------------- 9 -------------------");
+  // // console.log(`Vous avez choisi : ${question9}`);
+  // console.log("---------------------------- 10 -------------------");
+  // console.log(`Vous avez choisi : ${question10}`);
 });

@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./sytle/index.css" />
+    <title>Nové - Enquête de satisfaction</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./assets/icons/logo.svg" alt="logo" />
+      </div>
+    </header>
+    <!-- action="traitement.php" -->
+    <form id="feedback-form" method="POST">
+      <div class="icon-locations">
+        <img src="./assets/icons/icone-reclamation.svg" alt="icone" />
+      </div>
+      <div class="form-header">
+        <h1 class="form-title">
+          Enquête de satisfaction suite <br />à votre
+          <span class="form-title-highlight">sollicitation</span>
+        </h1>
+        <p class="form-title-subtitle">
+          Nos équipes s’engagent au quotidien pour vous assurer une qualité de
+          service, tant en matière de gestion locative que d’entretien du
+          patrimoine. Nové a également initié un ambitieux programme de
+          rénovation et de modernisation des logements, dont l’ensemble des
+          occupants bénéficieront progressivement d’ici 2029.
+        </p>
+      </div>
+      <div class="block-questions">
+        <div
+          class="block fade-in-out"
+          data-fade-in-point="1"
+          data-fade-out-point="0.8"
+        >
+          <div class="block-number">1</div>
+          <div class="block-content">
+            <p class="question">
+              Concernant l’accueil et la qualité des échanges avec les équipes
+              Nové, diriez-vous que vous êtes&nbsp;?
+            </p>
+            <div class="form-control">
+              <div class="box">
+                <input
+                  type="radio"
+                  id="tres-satisfait"
+                  name="satisfaction"
+                  value="tres-satisfait"
+                />
+                <label tabindex="0" for="tres-satisfait">Très satisfait</label>
+              </div>
+              <div class="box">
+                <input
+                  type="radio"
+                  id="plutot-insatisfait"
+                  name="satisfaction"
+                  value="plutot-insatisfait"
+                />
+                <label tabindex="0" for="plutot-insatisfait"
+                  >Plutôt insatisfait</label
+                >
+              </div>
+              <div class="box">
+                <input
+                  type="radio"
+                  id="insatisfait"
+                  name="satisfaction"
+                  value="insatisfait"
+                />
+                <label tabindex="0" for="insatisfait">Insatisfait</label>
+              </div>
+            </div>
+            <!--Insatisfait -->
+            <div id="causes-insatisfaction" style="display: none">
+              <p class="sub-question">
+                En cas d'insatisfaction, quelle en est la cause&nbsp;?
+                (plusieurs choix possibles)
+              </p>
+              <div class="box-checkbox">
+                <input
+                  type="checkbox"
+                  id="amabilite"
+                  name="causes[]"
+                  value="amabilite"
+                />
+                <label tabindex="0" for="amabilite"
+                  >L’amabilité de vos interlocuteurs Nové</label
+                >
+              </div>
+              <div class="box-checkbox">
+                <input
+                  type="checkbox"
+                  id="disponibilite"
+                  name="causes[]"
+                  value="disponibilite"
+                />
+                <label tabindex="0" for="disponibilite"
+                  >La disponibilité de vos interlocuteurs Nové</label
+                >
+              </div>
+              <div class="box-checkbox">
+                <input
+                  type="checkbox"
+                  id="qualite-informations"
+                  name="causes[]"
+                  value="qualite-informations"
+                />
+                <label tabindex="0" for="qualite-informations">
+                  La qualité des informations / conseils fournis par vos
+                  interlocuteurs Nové
+                </label>
+              </div>
+              <div class="box-checkbox">
+                <input
+                  type="checkbox"
+                  id="comprehension"
+                  name="causes[]"
+                  value="comprehension"
+                />
+                <label tabindex="0" for="comprehension">
+                  La compréhension / prise en compte de vos demandes
+                </label>
+              </div>
+              <div class="box-checkbox">
+                <input
+                  type="checkbox"
+                  id="autre"
+                  name="causes[]"
+                  value="autre"
+                />
+                <label tabindex="0" for="autre">Autre ...</label>
+              </div>
+              <!-- <div class="box-checkbox">
+              <input type="text" id="autre-rec" name="autre-details" value="" />
+            </div> -->
+            </div>
+          </div>
+        </div>
+        <!--------------------------------- 2------------ -->
+        <div
+          class="block fade-in-out"
+          data-fade-in-point="0.7"
+          data-fade-out-point="0.8"
+        >
+          <div class="block-number">2</div>
+          <div class="block-content">
+            <p class="question">
+              Concernant la communication au cours du traitement de votre
+              réclamation, diriez-vous que vous êtes&nbsp;?
+            </p>
+            <div class="form-control">
+              <div class="box">
+                <input
+                  type="radio"
+                  id="tres-satisfait-rec"
+                  name="satisfaction-rec"
+                  value="tres-satisfait-rec"
+                />
+                <label tabindex="0" for="tres-satisfait-rec"
+                  >Très satisfait</label
+                >
+              </div>
+              <div class="box">
+                <input
+                  type="radio"
+                  id="plutot-insatisfait-rec"
+                  name="satisfaction-rec"
+                  value="plutot-insatisfait-rec"
+                />
+                <label tabindex="0" for="plutot-insatisfait-rec"
+                  >Plutôt insatisfait</label
+                >
+              </div>
+              <div class="box">
+                <input
+                  type="radio"
+                  id="insatisfait-rec"
+                  name="satisfaction-rec"
+                  value="insatisfait-rec"
+                />
+                <label tabindex="0" for="insatisfait-rec">Insatisfait</label>
+              </div>
+            </div>
+            <!--Insatisfait -->
+            <div id="causes-insatisfaction-rec" style="display: none">
+              <p class="sub-question">
+                En cas d'insatisfaction, quelle en est la cause&nbsp;?
+                (plusieurs choix possibles)
+              </p>
+              <div class="box-checkbox">
+                <input
+                  type="checkbox"
+                  id="absence"
+                  name="causes-rec-2[]"
+                  value="absence"
+                />
+                <label tabindex="0" for="absence"
+                  >L’absence de confirmation de la prise en compte de votre
+                  demande</label
+                >
+              </div>
+              <div class="box-checkbox">
+                <input
+                  type="checkbox"
+                  id="information"
+                  name="causes-rec-2[]"
+                  value="information"
+                />
+                <label tabindex="0" for="information"
+                  >Le manque d’information sur l’état d’avancement de votre
+                  demande</label
+                >
+              </div>
+              <div class="box-checkbox">
+                <input
+                  type="checkbox"
+                  id="clarte"
+                  name="causes-rec-2[]"
+                  value="clarte"
+                />
+                <label tabindex="0" for="clarte"
+                  >La clarté des informations transmises par nos équipes</label
+                >
+              </div>
+              <div class="box-checkbox">
+                <input
+                  type="checkbox"
+                  id="clarte-2"
+                  name="causes-rec-2[]"
+                  value="clarte-2"
+                />
+                <label tabindex="0" for="clarte-2"
+                  >La clarté des informations transmises par l’entreprise (en
+                  cas de réclamation technique)</label
+                >
+              </div>
+              <div class="box-checkbox">
+                <input
+                  type="checkbox"
+                  id="autre-rec"
+                  name="causes-rec-2[]"
+                  value="autre"
+                />
+                <label tabindex="0" for="autre-rec">Autre ...</label>
+              </div>
+              <!-- <div class="box-checkbox">
+              <input type="text" id="autre-rec-2" name="autre-details" value="" />
+            </div> -->
+            </div>
+          </div>
+        </div>
+        <!--------------------------------- 3------------ -->
+        <div
+          class="block fade-in-out"
+          data-fade-in-point="0.7"
+          data-fade-out-point="0.8"
+        >
+          <div class="block-number">3</div>
+          <div class="block-content">
+            <p class="question">
+              Concernant l’intervention de l’entreprise dans votre logement,
+              diriez-vous que vous êtes &nbsp;? (en cas de réclamation
+              technique)
+            </p>
+            <div class="form-box">
+              <!-- en tete de table-->
+              <div class="table-header">
+                <span class="notes">Très satisfaisant </span>
+                <span class="notes">Satisfaisant </span>
+                <span class="notes">Plutôt satisfait</span>
+                <span class="notes">Insatisfaisant </span>
+              </div>
+              <div class="form-box-table">
+                <div class="titre-box-table">
+                  <p class="title-chmap">Prise de rendez-vous</p>
+                </div>
+                <div class="boxs">
+                  <div class="box-table">
+                    <input
+                      type="radio"
+                      id="tres_satisfait_pe"
+                      name="porte_entree"
+                      value="tres_satisfait"
+                    />
+                    <label for="tres_satisfait_pe"></label>
+                  </div>
+                  <div class="box-table">
+                    <input
+                      type="radio"
+                      id="satisfait_pe"
+                      name="porte_entree"
+                      value="satisfait"
+                    />
+                    <label for="satisfait_pe"></label>
+                  </div>
+                  <div class="box-table">
+                    <input
+                      type="radio"
+                      id="plutot_insatisfait_pe"
+                      name="porte_entree"
+                      value="plutot_insatisfait"
+                    />
+                    <label for="plutot_insatisfait_pe"></label>
+                  </div>
+                  <div class="box-table">
+                    <input
+                      type="radio"
+                      id="insatisfait_pe"
+                      name="porte_entree"
+                      value="insatisfait"
+                    />
+                    <label for="insatisfait_pe"></label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-box-table">
+                <div class="title-box-table">
+                  <p class="title-chmap">Respect du rendez-vous</p>
+                </div>
+                <div class="boxs">
+                  <div class="box-table">
+                    <input
+                      type="radio"
+                      id="tres_satisfait_murs"
+                      name="murs"
+                      value="tres_satisfait"
+                    />
+                    <label for="tres_satisfait_murs"></label>
+                  </div>
+                  <div class="box-table">
+                    <input
+                      type="radio"
+                      id="satisfait_murs"
+                      name="murs"
+                      value="satisfait"
+                    />
+                    <label for="satisfait_murs"></label>
+                  </div>
+                  <div class="box-table">
+                    <input
+                      type="radio"
+                      id="plutot_insatisfait_murs"
+                      name="murs"
+                      value="plutot_insatisfait"
+                    />
+                    <label for="plutot_insatisfait_murs"></label>
+                  </div>
+                  <div class="box-table">
+                    <input
+                      type="radio"
+                      id="insatisfait_murs"
+                      name="murs"
+                      value="insatisfait"
+                    />
+                    <label for="insatisfait_murs"></label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-box-table">
+                <div class="title-box-table">
+                  <p class="title-chmap">Amabilité et professionnalisme</p>
+                </div>
+                <div class="boxs">
+                  <div class="box-table">
+                    <input
+                      type="radio"
+                      id="tres_satisfait_plafonds"
+                      name="plafonds"
+                      value="tres_satisfait"
+                    />
+                    <label for="tres_satisfait_plafonds"></label>
+                  </div>
+                  <div class="box-table">
+                    <input
+                      type="radio"
+                      id="satisfait_plafonds"
+                      name="plafonds"
+                      value="satisfait"
+                    />
+                    <label for="satisfait_plafonds"></label>
+                  </div>
+                  <div class="box-table">
+                    <input
+                      type="radio"
+                      id="plutot_insatisfait_plafonds"
+                      name="plafonds"
+                      value="plutot_insatisfait"
+                    />
+                    <label for="plutot_insatisfait_plafonds"></label>
+                  </div>
+                  <div class="box-table">
+                    <input
+                      type="radio"
+                      id="insatisfait_plafonds"
+                      name="plafonds"
+                      value="insatisfait"
+                    />
+                    <label for="insatisfait_plafonds"></label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-box-table">
+                <div class="title-box-table">
+                  <p class="title-chmap">Réalisation des travaux</p>
+                </div>
+                <div class="boxs">
+                  <div class="box-table">
+                    <input
+                      type="radio"
+                      id="tres_sanitaires_robinetterie"
+                      name="sanitaires_robinetterie"
+                      value="très satisfait"
+                    />
+                    <label for="tres_sanitaires_robinetterie"></label>
+                  </div>
+                  <div class="box-table">
+                    <input
+                      type="radio"
+                      id="sati_sanitaires_robinetterie"
+                      name="sanitaires_robinetterie"
+                      value="satisfait"
+                    />
+                    <label for="sati_sanitaires_robinetterie"></label>
+                  </div>
+                  <div class="box-table">
+                    <input
+                      type="radio"
+                      id="plutôt_sanitaires_robinetterie"
+                      name="sanitaires_robinetterie"
+                      value="plutôt insatisfait"
+                    />
+                    <label for="plutôt_sanitaires_robinetterie"></label>
+                  </div>
+                  <div class="box-table">
+                    <input
+                      type="radio"
+                      id="insati_sanitaires_robinetterie"
+                      name="sanitaires_robinetterie"
+                      value="insatisfait"
+                    />
+                    <label for="insati_sanitaires_robinetterie"></label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-box-table">
+                <div class="title-box-table">
+                  <p class="title-chmap">
+                    Propreté des lieux après intervention
+                  </p>
+                </div>
+                <div class="boxs">
+                  <div class="box-table">
+                    <input
+                      type="radio"
+                      id="tres_satisfait_prises"
+                      name="prises"
+                      value="très satisfait"
+                    />
+                    <label for="tres_satisfait_prises"></label>
+                  </div>
+                  <div class="box-table">
+                    <input
+                      type="radio"
+                      id="satisfait_prises"
+                      name="prises"
+                      value="satisfait"
+                    />
+                    <label for="satisfait_prises"></label>
+                  </div>
+                  <div class="box-table">
+                    <input
+                      type="radio"
+                      id="pluto_prises"
+                      name="prises"
+                      value="plutôt insatisfait"
+                    />
+                    <label for="pluto_prises"></label>
+                  </div>
+                  <div class="box-table">
+                    <input
+                      type="radio"
+                      id="insatifi_prises"
+                      name="prises"
+                      value="insatisfait"
+                    />
+                    <label for="insatifi_prises"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--------------------------------- 4  ------------ -->
+        <div
+          class="block fade-in-out"
+          data-fade-in-point="0.7"
+          data-fade-out-point="0.8"
+        >
+          <div class="block-number">4</div>
+          <div class="block-content">
+            <p class="question">
+              Concernant la propreté du logement lors de votre arrivée,
+              diriez-vous que vous êtes&nbsp;?
+            </p>
+            <div class="form-control">
+              <input
+                type="radio"
+                id="proprete-tres-satisfait"
+                name="proprete"
+                value="tres-satisfait"
+              />
+              <label tabindex="0" for="proprete-tres-satisfait"
+                >Très satisfait</label
+              >
+              <input
+                type="radio"
+                id="proprete-satisfait"
+                name="proprete"
+                value="satisfait"
+              />
+              <label tabindex="0" for="proprete-satisfait">Satisfait</label>
+              <input
+                type="radio"
+                id="proprete-plutot-insatisfait"
+                name="proprete"
+                value="plutot-insatisfait"
+              />
+              <label tabindex="0" for="proprete-plutot-insatisfait"
+                >Plutôt insatisfait</label
+              >
+              <input
+                type="radio"
+                id="proprete-insatisfait"
+                name="proprete"
+                value="insatisfait"
+              />
+              <label tabindex="0" for="proprete-insatisfait">Insatisfait</label>
+            </div>
+            <div id="element-sales" style="display: none">
+              <p class="sub-question">
+                En cas d’insatisfaction, merci de nous indiquer les éventuels
+                éléments ou pièces jugés sales
+              </p>
+              <input type="text" id="elements-sales" name="proprete" value="" />
+            </div>
+          </div>
+        </div>
+        <span id="myButtonContainer">
+          <button id="myButton" type="submit" onclick="afficherTexte()">
+            Valider le formulaire
+          </button>
+          <p id="texteAffiche"></p>
+        </span>
+      </div>
+    </form>
+    <!-- for value -->
+    <script src="./js/reclamation.js" defer></script>
+    <!-- animation -->
+    <script src="./js/animation.js"></script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="134" height="134" viewBox="0 0 134 134">
+    <defs>
+        <clipPath id="846p6h910a">
+            <path data-name="Rectangle 2054" style="fill:none" d="M0 0h69.521v92.804H0z"/>
+        </clipPath>
+    </defs>
+    <g transform="translate(-693.5 -418.5)">
+        <circle data-name="Ellipse 1716" cx="67" cy="67" r="67" transform="translate(693.5 418.5)" style="fill:#eaf2fa"/>
+        <g data-name="Groupe 4892">
+            <path data-name="Rectangle 2047" transform="translate(728.861 443.352)" style="fill:#cadef1" d="M0 0h61.688v82.963H0z"/>
+            <path data-name="Rectangle 2048" transform="translate(738.515 456.829)" style="fill:#000084" d="M0 0h21.19v3.369H0z"/>
+            <path data-name="Rectangle 2049" transform="translate(738.517 466.194)" style="fill:#000084" d="M0 0h42.378v3.369H0z"/>
+            <path data-name="Rectangle 2050" transform="translate(738.517 475.556)" style="fill:#000084" d="M0 0h42.378v3.369H0z"/>
+            <path data-name="Rectangle 2051" transform="translate(738.517 484.92)" style="fill:#000084" d="M0 0h42.378v3.369H0z"/>
+            <path data-name="Rectangle 2052" transform="translate(738.517 494.284)" style="fill:#000084" d="M0 0h42.378v3.369H0z"/>
+            <path data-name="Rectangle 2053" transform="rotate(-45 1023.315 -656.315)" style="fill:#f3c746" d="M0 0h39.786v6.778H0z"/>
+            <path data-name="Tracé 6426" d="m52.251 49.883 4.794 4.794 1.649-6.442z" transform="translate(739.688 453.346)" style="fill:#000084"/>
+            <g data-name="Groupe 4893">
+                <g data-name="Groupe 4892" style="clip-path:url(#846p6h910a)" transform="translate(728.861 443.351)">
+                    <path data-name="Tracé 6427" d="M14.631 50.017c-4.243-.088-8.623 5.931-6.1 9.81 3.189 4.911 10.675-.693 13.7-2.956l-1.621-.931a5.255 5.255 0 0 0 .85 2.894 1.092 1.092 0 0 0 1.862 0c.315-.461 1.631.315 2.177.274a3.6 3.6 0 0 0 2.185-1.3h-1.527a8.259 8.259 0 0 0 8.36 1.562c1.283-.49.726-2.575-.573-2.079a6.114 6.114 0 0 1-6.262-1.008 1.1 1.1 0 0 0-1.525 0c-.515.531-.719.639-1.414.409a2.958 2.958 0 0 0-1.275-.221 2.666 2.666 0 0 0-2.01 1.272h1.862a3.189 3.189 0 0 1-.557-1.806c-.007-.744-.939-1.44-1.621-.931a40.3 40.3 0 0 1-4.86 3.133c-1.469.8-3.585 2.046-5.269 1.114-1.647-.913-.968-3.157-.217-4.445a4.583 4.583 0 0 1 3.835-2.638 1.079 1.079 0 0 0 0-2.156" transform="translate(1.613 10.364)" style="fill:#fff"/>
+                    <path data-name="Tracé 6428" d="M34.148 57.607a.944.944 0 0 0 0-1.887.944.944 0 0 0 0 1.887" transform="translate(6.887 11.546)" style="fill:#fff"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

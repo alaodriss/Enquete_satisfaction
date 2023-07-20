@@ -1,0 +1,130 @@
+:root {
+  --form-control-color: #10008b;
+  --form-control-color-2: #000085;
+  --form-control-color-red: #ff4849;
+  --form-control-color-white: #fff;
+  --form-control-color-white-2: #bababa;
+  --form-control-color-white-3: #f7f7f7;
+}
+
+body {
+  background-color: var(--form-control-color-red);
+  color: var(--form-control-color);
+  font-family: Avenir;
+}
+textarea {
+  font-family: Avenir;
+  padding: 12px 0 0 10px;
+}
+
+p {
+  margin-top: 0;
+  font-size: 21px;
+  line-height: 1.6em;
+}
+button {
+  border: none;
+  color: var(--form-control-color-white);
+  background-color: var(--form-control-color-red);
+  padding: 20px 30px;
+  font-size: 18px;
+  font-weight: 900;
+  cursor: pointer;
+  font-family: Avenir;
+}
+
+#nove-email {
+  position: relative;
+  max-width: 67%;
+  margin: 3rem auto;
+  background-color: var(--form-control-color-white);
+  border-radius: 5rem;
+}
+
+#myButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 40px;
+}
+#fleche {
+  position: relative;
+  bottom: 10px;
+  padding: 0 20px;
+}
+
+.logo {
+  margin: 25px 0;
+  margin-left: 16%;
+}
+
+.section-1 {
+  padding: 3rem 15%;
+}
+
+.section-2 {
+  padding: 3rem 15%;
+  background-color: var(--form-control-color-white-3);
+  color: var(--form-control-color-white-2);
+  border-bottom-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+}
+
+.icon-ordi {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -90%);
+}
+
+.email-header {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.email-title {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.participation {
+  text-align: center;
+  margin: 50px 0;
+}
+.message {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2em;
+}
+.highlight {
+  text-decoration: underline;
+  cursor: pointer;
+  color: var(--form-control-color-2);
+}
+
+.infos {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 2em;
+  white-space: pre-line;
+}
+/*****  @media 805px *****/
+
+@media screen and (max-width: 805px) {
+  .email-header {
+    padding-bottom: 0;
+  }
+
+  #myButtonContainer {
+    top: 22px;
+  }
+  p {
+    margin-top: 0;
+    font-size: 16px;
+  }
+  .email-title {
+    text-align: center;
+    margin: 10px 0%;
+    font-size: 23px;
+  }
+}
